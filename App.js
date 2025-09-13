@@ -6,7 +6,6 @@ import { PaperProvider } from "react-native-paper";
 import CreateTask from './src/screens/CreateTask.js';
 import TaskList from './src/screens/TaskList.js';
 import TaskEdits from './src/screens/TaskEdits.js';
-import TaskDelete from './src/screens/TaskDelete.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -32,10 +31,11 @@ export default function App() {
             component={TaskEdits}
             options={{ title: 'Edit Task'}}
           />
+
           <Stack.Screen
             name="TaskDelete"
             component={TaskDelete}
-            options={{ title: 'Task Delete'}}
+            options={{ title: 'Delete Task'}}
           />
           
         </Stack.Navigator>
