@@ -5,7 +5,7 @@ import styles from '../styles/styles';
 
 const TaskDelete = ({ route, navigation }) => {
     const { task } = route.params;
-
+    // Este maneja el camnbio de estado al eliminar
     const handleDelete = () => {
         navigation.navigate('TaskList', { wasDeleted: true });
     };
@@ -14,7 +14,7 @@ const TaskDelete = ({ route, navigation }) => {
         <View style={styles.container}>
             <Card style={styles.card}>
                 <Card.Title 
-                    title="Delete Task" 
+                    title="Delete Task"  
                     subtitle="Are you sure about this? This cannot be undone" 
                 />
                 <Card.Content>
